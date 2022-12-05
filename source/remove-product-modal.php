@@ -2,7 +2,7 @@
 include_once './source/database.php';
 ?>
 
-<button id="remove-product-btn" name="remove-product">Remove Product</button>
+<button type="submit" id="remove-product-btn" name="remove-product">Remove Product</button>
 
 <!---------- new-product modal ---------->
 <div class="remove-modal" id="remove-product-modal">

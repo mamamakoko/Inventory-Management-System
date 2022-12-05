@@ -77,12 +77,52 @@ header {
     display: block;
 }
 
+/* --------- data-process ---------- */
+
 aside {
     background-color: #dde0e1;
-    
+    padding: 5%;
 }
+
+aside div {
+    justify-items: center;
+    display: grid;
+    padding: 2%;
+}
+
+button {
+    height: 2.5em;
+    width: 10em;
+    border-radius: 5px;
+}
+
+/* ---------- data-display ---------- */
 
 main {
     background-color: #dee6ed;
-    
+    padding: 1em 2.5em 2.5em 2.5em;
+
+    scroll-behavior: smooth;
+
+    overflow: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
