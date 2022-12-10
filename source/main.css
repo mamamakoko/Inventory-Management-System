@@ -4,7 +4,7 @@
 	margin: 0;
 }
 .wrapper{
-	background: url(./asset/bg1.jpeg) no-repeat;
+	background: url(../asset/bg1.jpeg) no-repeat;
 	background-size: cover;
 	height: 100vh;
 }
