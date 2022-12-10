@@ -2,11 +2,11 @@
 include_once './source/database.php';
 ?>
 
-<button type="submit" id="remove-product-btn" name="remove-product">Remove Product</button>
+<button type="submit" id="remove-product-btn" name="remove-product" class="button">Remove Product</button>
 
 <!---------- new-product modal ---------->
 <div class="remove-modal" id="remove-product-modal">
-    <form action="./process/deletion.php" method="POST" class="remove-product-modal-content">
+    <form action="./process/delete.php" method="POST" class="remove-product-modal-content">
 
         <span class="remove-close">&times;</span>
 
@@ -14,7 +14,7 @@ include_once './source/database.php';
         <label for="item-id">Product ID:</label>
         <input type="text" id="item-id" name="item-id">
 
-        <button type="submit" name="remove">Remove</button>
+        <button type="submit" name="remove" class="button">Remove</button>
 </div>
 </form>
 

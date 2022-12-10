@@ -1,32 +1,19 @@
 <?php
 
-// Then we include the databse connnecyion.
-include_once '../source/database.php';
+include "../source/database.php";
 
-// Get the data from the modal.
-$itemID = $_POST['item-id'];
+// if (isset($_GET['ID'])) {
+//     $deleteID = $_GET['ID'];
 
-// Checks if input is empty.
-if (empty($itemID)) {
-    echo 'All fields are required';
-} else {
+//     $sqlDelete = "DELETE FROM inventory WHERE itemID = $deleteID";
+//     mysqli_query($connection, $sqlDelete);
+// }
 
-    // Select the specified row and checks if the input is unique.
-    $sql = "SELECT * FROM inventory WHERE itemID = '$itemID'";
-    $uniqueValues = mysqli_query($connection, $sql);
+//getting id of the data from url
+$id = $_GET['ID'];
 
-    // Checks if the input is unique.
-    if (mysqli_num_rows($uniqueValues)) {
+//deleting the row from table
+$result = mysqli_query($mysqli, "DELETE FROM users WHERE itemID=$id");
 
-        // If true, delete the row.
-        $sql = "DELETE FROM inventory WHERE itemID = '$itemID';";
-        mysqli_query($connection, $sql);
-
-        // Then go back to dashboard and exit. 
-        header("Location: ../dashboard.php?newproduct=success");
-        exit();
-    } else {
-        // If false, display the error message.
-        echo 'Opps! The product does not exist.';
-    }
-}
+header("location: ../dashboard.php");
+exit;

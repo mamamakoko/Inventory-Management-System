@@ -90,7 +90,7 @@ aside div {
     padding: 2%;
 }
 
-button {
+.button {
     height: 2.5em;
     width: 10em;
     border-radius: 5px;
@@ -106,6 +106,8 @@ main {
 
     overflow: auto;
 }
+
+/* ---------- main-panel-scrollbar ---------- */
 
 /* width */
 ::-webkit-scrollbar {

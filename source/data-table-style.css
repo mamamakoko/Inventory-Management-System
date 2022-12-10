@@ -5,7 +5,6 @@ table {
     font-family: monospace;
     font-size: 1.5em;
     text-align: left;
-    ;
 }
 
 th {
@@ -16,4 +15,37 @@ th {
 
 tr:nth-child(even) {
     background-color: #ced4da;
+}
+
+.stock-button #plus{
+    margin-right: 1em;
+    background-color: #6a994e;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.stock-button #minus{
+    float: right;
+    transform: translate(-7em);
+    background-color: #bc4749;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+#minus:hover {
+    background-color: #893133;
+}
+
+#plus:hover {
+    background-color: #4B6C38;
+}
+
+.action-button {
+    margin-right: 1em;
 }

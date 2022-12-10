@@ -2,7 +2,7 @@
 include_once './source/database.php';
 ?>
 
-<button id="new-product-btn" name="new-product">New Product</button>
+<button id="new-product-btn" name="new-product" class="button">New Product</button>
 
 <!---------- new-product modal ---------->
 <div class="new-modal" id="new-product-modal">
@@ -16,7 +16,7 @@ include_once './source/database.php';
         <label for="stock">No. of stock:</label>
         <input type="text" id="stock" name="item-stock"><br>
 
-        <button type="submit" name="add">Add</button>
+        <button type="submit" name="add" class="button">Add</button>
 </div>
 </form>
 
