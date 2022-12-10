@@ -1,5 +1,5 @@
 <?php
-// include_once './source/database.php';
+    include_once './source/database.php';
 ?>
 
 <!DOCTYPE html>
@@ -61,11 +61,13 @@
                     <th>Product Name</th>
                     <th>Date</th>
                     <th>No. of Stock</th>
+                    <th>Action</th>
                 </tr>
 
-                    <?php
-                    include_once './process/display-data.php';
-                    ?>
+                <?php
+                include_once './process/display-data.php';
+                ?>
+
             </table>
         </main>
     </div>
