@@ -1,0 +1,14 @@
+.modification-content {
+	display: flex;
+	justify-content: center;
+
+	margin-top: 10em;
+}
+
+.mod-btn {
+	width: calc(+20em);
+}
+
+#mod-cancel {
+	transform: translate(-15em);
+}

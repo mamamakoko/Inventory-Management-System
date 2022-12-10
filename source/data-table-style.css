@@ -17,7 +17,7 @@ tr:nth-child(even) {
     background-color: #ced4da;
 }
 
-.stock-button #plus{
+.stock-button #plus {
     margin-right: 1em;
     background-color: #6a994e;
     color: white;
@@ -27,7 +27,7 @@ tr:nth-child(even) {
     border-radius: 5px;
 }
 
-.stock-button #minus{
+.stock-button #minus {
     float: right;
     transform: translate(-7em);
     background-color: #bc4749;
@@ -48,4 +48,8 @@ tr:nth-child(even) {
 
 .action-button {
     margin-right: 1em;
+}
+
+a:link {
+    text-decoration: none;
 }

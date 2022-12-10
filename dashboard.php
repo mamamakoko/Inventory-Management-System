@@ -23,7 +23,6 @@
                 <div>
                     <img class="logo" src="./asset/logo1.png">
                     <a href="#">Dashboard</a>
-                    <a href="#">In Stock</a>
                     <a href="#" class="admin"><i class="fas fa-user-circle"></i>Admin</a>
 
                     <div class="dropdown">
