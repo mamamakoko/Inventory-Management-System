@@ -42,16 +42,6 @@
                 include_once './source/new-product-modal.php';
                 ?>
             </div>
-            <div>
-                <?php
-                include_once './source/modify-product-modal.php';
-                ?>
-            </div>
-            <div>
-                <?php
-                include_once './source/remove-product-modal.php';
-                ?>
-            </div>
         </aside>
 
         <main>
