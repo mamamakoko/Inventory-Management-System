@@ -7,13 +7,14 @@
 </head>
 <body>
 	<div class="wrapper">
-	    <img class="logo" src="./asset/logo1.png">
+	    <img class="logo" src="../asset/logo1.png">
 			
 		<div class="center">
 			<h2>Inventory Management System</h2>
-			<a class="button" href="index.php">Login</a>
+			<a class="button" href="../index.php">Login</a>
 			
 		</div>
     </div>
+	
 </body>
 </html>

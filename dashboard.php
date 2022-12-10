@@ -28,9 +28,16 @@
 
                     <div class="dropdown">
                         <a href="#"><i class="fa-solid fa-caret-down"></a></i>
-                        <div class="dropdown-options">
-                            <a href="#">Logout</a>
-                        </div>
+                        <form method="POST"><button type="submit" name="logout">Logout</button></form>
+                        <?php
+                            if (isset($_POST['logout'])) {
+                                // Destroy the session
+                                session_destroy();
+                                // Redirect to the login page
+                                header('Location: ./source/main.php');
+                                exit;
+                            }
+                        ?>
                     </div>
                 </div>
             </nav>
