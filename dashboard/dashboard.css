@@ -1,0 +1,102 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 15vw 1fr;
+}
+
+/* ---------- navigation-bar ---------- */
+
+header {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .16);
+    grid-column: 1/-1;
+}
+
+.navbar div {
+    display: flex;
+}
+
+.navbar div h1,
+.navbar div a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 230px;
+    height: 50px;
+    padding: 20px;
+}
+
+.navbar div a {
+    padding-left: 60px;
+    padding-bottom: 50%;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #113F67;
+    font-weight: bold;
+}
+
+.navbar div .logout {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 67%;
+}
+
+/* --------- data-process ---------- */
+
+aside {
+    background-color: #dde0e1;
+    padding: 5%;
+}
+
+aside div {
+    justify-items: center;
+    display: grid;
+    padding: 2%;
+}
+
+.button {
+    height: 2.5em;
+    width: 10em;
+    border-radius: 5px;
+}
+
+/* ---------- data-display ---------- */
+
+main {
+    background-color: #dee6ed;
+    padding: 1em 2.5em 2.5em 2.5em;
+
+    scroll-behavior: smooth;
+
+    overflow: auto;
+}
+
+/* ---------- main-panel-scrollbar ---------- */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
